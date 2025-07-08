@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agility - Sobre</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/inicio.css">
+  
+</head>
+<body>
+  <header class="top-bar">
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <h1 style="letter-spacing: 5px;">AGILITY</h1>
+    <div class="placeholder"></div>
+    <div class="top-bar-right">
+      <div class="notification-icon" id="notificacao-btn" style="cursor: pointer;">
+                <span class="bell">🔔</span>
+                <span class="notification-badge" id="notificacao-contador" style="display: none;">0</span>
+            </div>
+       <div class="user-info">
+              <img id="avatarUsuario" src="https://i.pravatar.cc/40?img=3" alt="Usuário" class="user-avatar">
+              <span class="user-name">Olá, Usuário</span>
+        </div>
+    </div>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="A_Home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li class="has-submenu">
+        <button class="submenu-toggle"><i class="fa-solid fa-box"></i>Produtos</button>
+        <ul class="submenu">
+          <li><a href="A_Cadastrarproduto.html">Adicionar Produto</a></li>
+          <li><a href="A_Estoque.html">Seu Estoque</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <button class="submenu-toggle"><i class="fa-solid fa-building"></i>Fornecedores</button>
+        <ul class="submenu">
+          <li><a href="A_Fornecedor.html">Cadastrar Fornecedor</a></li>
+          <li><a href="A_Fornecedores.html">Fornecedores</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <button class="submenu-toggle"><i class="fa-solid fa-cart-shopping"></i>Compras</button>
+        <ul class="submenu">
+          <li><a href="#">Cadastrar Compras</a></li>
+          <li><a href="#">Compras</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <button class="submenu-toggle"><i class="fa-solid fa-tag"></i>Nota Fiscal</button>
+        <ul class="submenu">
+          <li><a href="A_CadastrarNotaFiscal.html">Cadastrar Fiscal</a></li>
+          <li><a href="A_NotaFiscal.html">Notas Fiscais</a></li>
+        </ul>
+      </li>
+      <li><a href="A_ChatBot.html"><i class="fa-solid fa-headset"></i>ChatBot</a></li>
+      <li><a href="A_relatorios1.html"><i class="fa-solid fa-file"></i>Relatórios</a></li>
+      <li><a href="A_Perfil.html"><i class="fa-solid fa-user"></i>Perfil</a></li>
+      <li><a href="A_Contato.html"><i class="fa-solid fa-envelope"></i>Contato</a></li>
+      <li><a href="A_Sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre / Ajuda</a></li>
+      <li><a href="A_Configuracoes.html"><i class="fa-solid fa-gear"></i>Configurações</a></li>
+      <li><a href="#" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i>Sair Da Conta</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="project-overview">
+      <h1>Projeto Agility</h1>
+      <p>O <strong>Agility</strong> é um sistema moderno de controle de estoque, desenvolvido para facilitar o gerenciamento de produtos, fornecedores e compras de forma prática e eficiente.</p>
+    </section>
+
+    <section class="cards-section">
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-box"></i> Cadastro de Produtos</h2>
+        <p>Gerencie todos os produtos com informações detalhadas para controle de estoque eficiente.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-truck"></i> Cadastro de Fornecedores</h2>
+        <p>Mantenha os dados dos seus fornecedores organizados e acessíveis.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-cart-shopping"></i> Cadastro de Compras</h2>
+        <p>Registre suas compras com vínculo a produtos e fornecedores.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-eye"></i> Visualização de Produtos</h2>
+        <p>Acompanhe seus produtos e status em tempo real no estoque.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-building"></i> Visualização de Fornecedores</h2>
+        <p>Veja e edite os dados dos fornecedores cadastrados com facilidade.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-clipboard-list"></i> Visualização de Compras</h2>
+        <p>Tenha controle total sobre as compras realizadas e seus detalhes.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-chart-line"></i> DashBoard</h2>
+        <p>Visualize dados consolidados em gráficos e relatórios interativos.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-headset"></i> Contato</h2>
+        <p>Entre em contato com o suporte técnico via e-mail.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-gear"></i> Configurações</h2>
+        <p>Gerencie preferências do sistema como tema escuro e notificações.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-file-invoice"></i> Cadastro de Nota Fiscal</h2>
+      <p>Cadastre, edite e exclua notas fiscais ao seu banco de dados.</p>
+</div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-book-open-reader">‌</i> Visualização de Nota Fiscal</h2>
+        <p>Veja e edite os dados das notas fiscais cadastradas com facilidade.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-circle-user">‌</i> Perfil</h2>
+        <p>Configurações de perfil.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-comments">‌</i> ChatBot</h2>
+        <p>ChatBot para suporte técnico.</p>  
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-bell"></i>Notificação</h2>
+        <p>Vizualize as suas notificações.</p>
+      </div>
+      <div class="card-ajuda">
+        <h2><i class="fa-solid fa-clipboard-user">‌</i>Detalhes</h2>
+        <p>Exibe dados do seu cadastro.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/scriptinicio.js"></script>
+  <script src="../js/A_Notificacao.js"></script>
+   <script src="../js/A_Perfil.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          atualizarContadorNotificacoes();
+        });
+      </script>
+</body>
+</html>
