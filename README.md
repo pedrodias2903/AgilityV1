@@ -11,6 +11,8 @@ Pedro Caetano Torres
 Pedro Henrique Gonçalves
 Lucas Felipe de Oliveira
 Rodrigo Angelo Nepomuceno
+
+
 🛠 Funcionalidades já implementadas:
 
 Cadastro de Usuários: Criação de contas inserindo nome, email e senha.
@@ -27,6 +29,8 @@ Visualização de Produtos e Fornecedor cadastrados.
 Exclusão de itens cadastrados(Produto,Fornecedor, Compras, Nota Fiscal)
 Contato: A funcionalidade de contato permite que o usuário se comunique com os colaboradores da empresa por meio de e-mail.
 DashBoard: Foi inserido uma funcionalidade de dashboard de produtos proximo do vencimento, vencidos, produtos seguros e Total de Produtos.
+
+
 🌐 Tecnologias Utilizadas:
 
 Backend:
